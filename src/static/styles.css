@@ -59,10 +59,17 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #d9e2ff;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+  box-shadow: 0 10px 24px rgba(26, 35, 126, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(26, 35, 126, 0.14);
 }
 
 .activity-card h4 {
@@ -72,6 +79,99 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #eef3ff;
+  border: 1px solid #d2ddff;
+}
+
+.participants-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.participants-header h5 {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #1a237e;
+}
+
+.participants-count {
+  min-width: 24px;
+  height: 24px;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #1a237e;
+  background-color: #d6e1ff;
+}
+
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding: 7px 8px;
+  border-radius: 8px;
+  background-color: #f8faff;
+}
+
+.participant-item:last-child {
+  margin-bottom: 0;
+}
+
+.participant-email {
+  color: #243a6b;
+  word-break: break-word;
+}
+
+.participant-delete-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 8px;
+  border: 1px solid #f2b8bf;
+  background-color: #fff3f5;
+  color: #b42332;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.participant-delete-button:hover {
+  background-color: #ffe7ea;
+  transform: scale(1.04);
+}
+
+.participant-delete-button svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.participants-empty {
+  margin-bottom: 0;
+  color: #445680;
+  font-style: italic;
 }
 
 .form-group {
